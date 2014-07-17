@@ -7,8 +7,8 @@ namespace osu_api
 {
     public class osuAPI
     {
-        private WebClient _client;
-        private string _apiKey;
+        private readonly WebClient _client;
+        private readonly string _apiKey;
 
         private const string ApiUrl = "https://osu.ppy.sh/";
         private const string GetBeatmapsURL = ApiUrl + "/api/get_beatmaps";
